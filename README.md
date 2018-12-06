@@ -16,7 +16,7 @@ Main languages and technologies used: Swift, UI Kit, Core Animation, CocoaPods, 
 
 ## Requirements
 
-* iOS 10.0+
+* iOS 9.0+
 * Xcode 9.0+
 * Swift 4.0+
 

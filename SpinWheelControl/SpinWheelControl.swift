@@ -393,8 +393,7 @@ open class SpinWheelControl: UIControl {
                 decelerationDisplayLink?.preferredFramesPerSecond = SpinWheelControl.kPreferredFramesPerSecond
             }
             else {
-                // TODO: Fallback on earlier versions
-                decelerationDisplayLink?.preferredFramesPerSecond = SpinWheelControl.kPreferredFramesPerSecond
+                decelerationDisplayLink?.frameInterval = SpinWheelControl.kPreferredFramesPerSecond
             }
             decelerationDisplayLink?.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
         }
@@ -506,8 +505,7 @@ open class SpinWheelControl: UIControl {
         if #available(iOS 10.0, *) {
             snapDisplayLink?.preferredFramesPerSecond = SpinWheelControl.kPreferredFramesPerSecond
         } else {
-            // TODO: Fallback on earlier versions
-            snapDisplayLink?.preferredFramesPerSecond = SpinWheelControl.kPreferredFramesPerSecond
+            snapDisplayLink?.frameInterval = SpinWheelControl.kPreferredFramesPerSecond
         }
         snapDisplayLink?.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
     }
